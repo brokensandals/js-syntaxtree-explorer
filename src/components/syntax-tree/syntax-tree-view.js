@@ -39,7 +39,7 @@ function AstObjectView({ object, highlightedNodeId, onHighlightedNodeChange }) {
   const handleMouseOver = astId == null ? null : (event) => {
     onHighlightedNodeChange(astId);
     event.stopPropagation();
-  }
+  };
 
   const className = [
     'ast-object',

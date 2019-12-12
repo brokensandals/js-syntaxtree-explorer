@@ -25,8 +25,10 @@ class AstExplorerContainer extends React.Component {
     super(props);
     this.state = buildStateForSource(props.defaultSource);
     this.state.highlightedNodeId = null;
+    this.state.treeStyle = props.defaultTreeStyle || 'styled';
     this.handleHighlightedNodeChange = this.handleHighlightedNodeChange.bind(this);
     this.handleSourceChange = this.handleSourceChange.bind(this);
+    this.handleTreeStyleChange = this.handleTreeStyleChange.bind(this);
   }
 
   handleHighlightedNodeChange(newNodeId) {
@@ -37,12 +39,18 @@ class AstExplorerContainer extends React.Component {
     this.setState(buildStateForSource(newSource));
   }
 
+  handleTreeStyleChange(newStyle) {
+    this.setState({ treeStyle: newStyle });
+  }
+
   render() {
     return <AstExplorerView ast={this.state.ast}
                             highlightedNodeId={this.state.highlightedNodeId}
                             source={this.state.source}
+                            treeStyle={this.state.treeStyle}
                             onHighlightedNodeChange={this.handleHighlightedNodeChange}
-                            onSourceChange={this.handleSourceChange} />;
+                            onSourceChange={this.handleSourceChange}
+                            onTreeStyleChange={this.handleTreeStyleChange} />;
   }
 }
 
