@@ -1,5 +1,7 @@
 # JS Syntax Tree Explorer
 
+Deployed here: https://brokensandals.github.io/js-syntaxtree-explorer/
+
 This tool allows you to enter a piece of javascript source code and see it displayed side-by-side with a representation of its abstract syntax tree.
 Hovering over part of the tree will highlight the relevant part of code, and vice versa.
 
