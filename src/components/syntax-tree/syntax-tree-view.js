@@ -60,7 +60,9 @@ function AstObjectView({ object, highlightedNodeId, onHighlightedNodeChange }) {
 }
 
 function SyntaxTreeView({ ast, highlightedNodeId, onHighlightedNodeChange }) {
-  return <div className="syntax-tree">
+  const clearHighlight = () => onHighlightedNodeChange(null);
+
+  return <div className="syntax-tree" onMouseLeave={clearHighlight}>
     <AstObjectView object={ast}
                    highlightedNodeId={highlightedNodeId}
                    onHighlightedNodeChange={onHighlightedNodeChange} />

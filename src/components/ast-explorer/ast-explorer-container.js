@@ -9,7 +9,10 @@ function parse(source) {
     const annotated = annotateAstWithIds(parsed);
     return annotated;
   } catch (error) {
-    return { type: 'ParseError', message: error.message };
+    return { type: 'ParseError',
+             message: error.message,
+             astId: 1,
+             range: [0, source.length] };
   }
 }
 

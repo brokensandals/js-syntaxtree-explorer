@@ -46,7 +46,9 @@ function AnnotatedSourceView({
   source,
   onHighlightedNodeChange
 }) {
-  return <pre className="annotated-source"><code>
+  const clearHighlight = () => onHighlightedNodeChange(null);
+  
+  return <pre className="annotated-source" onMouseLeave={clearHighlight}><code>
     <SourceForNode highlightedNodeId={highlightedNodeId}
                    node={ast}
                    source={source}
