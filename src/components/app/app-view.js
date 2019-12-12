@@ -14,7 +14,7 @@ function AppView() {
     <div className="app">
       <AstExplorer defaultSource={TEST_SOURCE} />
       <div className="blurb">
-        created by <a href="https://brokensandals.net">brokensandals</a> | source code on <a href="https://github.com/brokensandals/js-syntaxtree-explorer">github</a>
+        created by <a href="https://brokensandals.net">brokensandals</a> | source code on <a href="https://github.com/brokensandals/js-syntaxtree-explorer">github</a> | built using <a href="https://esprima.org">esprima</a>
       </div>
     </div>
   );
