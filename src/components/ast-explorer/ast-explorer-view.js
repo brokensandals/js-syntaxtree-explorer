@@ -1,9 +1,12 @@
 import React from 'react';
 import './ast-explorer.css';
+import SyntaxTree from '../syntax-tree';
 
 function AstExplorerView({
   ast,
+  highlightedNodeId,
   source,
+  onHighlightedNodeChange,
   onSourceChange
 }) {
   const handleSourceChange = (event) => onSourceChange(event.target.value);
@@ -13,7 +16,9 @@ function AstExplorerView({
               value={source}
               onChange={handleSourceChange} />
     <pre className="source"><code>{source}</code></pre>
-    <pre className="tree">{JSON.stringify(ast, null, 2)}</pre>
+    <SyntaxTree ast={ast}
+                highlightedNodeId={highlightedNodeId}
+                onHighlightedNodeChange={onHighlightedNodeChange} />
   </div>;
 }
 

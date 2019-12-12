@@ -21,7 +21,13 @@ class AstExplorerContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = buildStateForSource(props.defaultSource);
+    this.state.highlightedNodeId = null;
+    this.handleHighlightedNodeChange = this.handleHighlightedNodeChange.bind(this);
     this.handleSourceChange = this.handleSourceChange.bind(this);
+  }
+
+  handleHighlightedNodeChange(newNodeId) {
+    this.setState({ highlightedNodeId: newNodeId });
   }
 
   handleSourceChange(newSource) {
@@ -30,7 +36,9 @@ class AstExplorerContainer extends React.Component {
 
   render() {
     return <AstExplorerView ast={this.state.ast}
+                            highlightedNodeId={this.state.highlightedNodeId}
                             source={this.state.source}
+                            onHighlightedNodeChange={this.handleHighlightedNodeChange}
                             onSourceChange={this.handleSourceChange} />;
   }
 }

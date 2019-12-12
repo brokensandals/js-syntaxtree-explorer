@@ -1,0 +1,48 @@
+.syntax-tree dl {
+  margin: 0;
+}
+
+.syntax-tree dt {
+  font-size: .8em;
+}
+
+.syntax-tree dt::after {
+  content: ":";
+}
+
+.syntax-tree dd {
+  margin-left: 15px;
+}
+
+.syntax-tree ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.syntax-tree .primitive {
+  font-size: .9em;
+  color: slateblue;
+}
+
+.ast-object {
+  border-left: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  padding-left: 3px;
+  padding-top: 3px;
+  margin-top: 4px;
+}
+
+.ast-object.highlighted-node {
+  background-color: yellow;
+}
+
+.ast-object .type {
+  font-size: .9em;
+  color: gray;
+}
+
+.ast-object .range {
+  font-size: .7em;
+  color: brown;
+}
