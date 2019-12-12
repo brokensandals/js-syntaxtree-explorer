@@ -12,7 +12,7 @@
   resize: none;
 }
 
-.source {
+.annotated-source {
   grid-row: 2;
   grid-column: 1;
   overflow: scroll;

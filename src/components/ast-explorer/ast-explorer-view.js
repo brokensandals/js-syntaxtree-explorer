@@ -1,5 +1,6 @@
 import React from 'react';
 import './ast-explorer.css';
+import AnnotatedSource from '../annotated-source';
 import SyntaxTree from '../syntax-tree';
 
 function AstExplorerView({
@@ -15,7 +16,10 @@ function AstExplorerView({
     <textarea className="source-entry"
               value={source}
               onChange={handleSourceChange} />
-    <pre className="source"><code>{source}</code></pre>
+    <AnnotatedSource ast={ast}
+                     highlightedNodeId={highlightedNodeId}
+                     source={source}
+                     onHighlightedNodeChange={onHighlightedNodeChange} />
     <SyntaxTree ast={ast}
                 highlightedNodeId={highlightedNodeId}
                 onHighlightedNodeChange={onHighlightedNodeChange} />

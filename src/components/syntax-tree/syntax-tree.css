@@ -33,7 +33,7 @@
   margin-top: 4px;
 }
 
-.ast-object.highlighted-node {
+.ast-object.highlighted {
   background-color: yellow;
 }
 
