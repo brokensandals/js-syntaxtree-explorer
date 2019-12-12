@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/js-syntaxtree-explorer/static/css/main.3cc50a3f.chunk.css",
+    "main.js": "/js-syntaxtree-explorer/static/js/main.70dbd2fb.chunk.js",
+    "main.js.map": "/js-syntaxtree-explorer/static/js/main.70dbd2fb.chunk.js.map",
+    "runtime-main.js": "/js-syntaxtree-explorer/static/js/runtime-main.7424815d.js",
+    "runtime-main.js.map": "/js-syntaxtree-explorer/static/js/runtime-main.7424815d.js.map",
+    "static/js/2.04d05ea0.chunk.js": "/js-syntaxtree-explorer/static/js/2.04d05ea0.chunk.js",
+    "static/js/2.04d05ea0.chunk.js.map": "/js-syntaxtree-explorer/static/js/2.04d05ea0.chunk.js.map",
+    "index.html": "/js-syntaxtree-explorer/index.html",
+    "precache-manifest.20b7e18cf015efbae3cd53cc6f7bd8e1.js": "/js-syntaxtree-explorer/precache-manifest.20b7e18cf015efbae3cd53cc6f7bd8e1.js",
+    "service-worker.js": "/js-syntaxtree-explorer/service-worker.js",
+    "static/css/main.3cc50a3f.chunk.css.map": "/js-syntaxtree-explorer/static/css/main.3cc50a3f.chunk.css.map",
+    "static/js/2.04d05ea0.chunk.js.LICENSE": "/js-syntaxtree-explorer/static/js/2.04d05ea0.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7424815d.js",
+    "static/js/2.04d05ea0.chunk.js",
+    "static/css/main.3cc50a3f.chunk.css",
+    "static/js/main.70dbd2fb.chunk.js"
+  ]
+}
