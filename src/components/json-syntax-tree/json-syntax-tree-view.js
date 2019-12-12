@@ -3,7 +3,7 @@ import './json-syntax-tree.css';
 
 function JsonAstObjectView({ object, highlightedNodeId, depth, onHighlightedNodeChange }) {
   if (typeof object !== 'object' || object == null || object === undefined) {
-    return <span class="primitive">{JSON.stringify(object)}</span>;
+    return <span className="primitive">{JSON.stringify(object)}</span>;
   }
   
   if (Array.isArray(object)) {
