@@ -1,5 +1,4 @@
 .ast-explorer {
-  height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 25% 75%;

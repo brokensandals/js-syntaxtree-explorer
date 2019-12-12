@@ -1,3 +1,19 @@
 .app {
   height: 100vh;
+  display: grid;
+  grid-template-rows: calc(100vh - 2em) 2em;
+}
+
+.ast-explorer {
+  grid-row: 1;
+  height: 100%;
+}
+
+.blurb {
+  grid-row: 2;
+  height: 1em;
+  text-align: right;
+  padding: 0.5em;
+  margin: 0;
+  background-color: lightgray;
 }
