@@ -5,7 +5,7 @@ import { annotateAstWithIds } from '../../utils/ast-ids';
 
 function parse(source) {
   try {
-    const parsed = esprima.parseModule(source, { comments: true, range: true });
+    const parsed = esprima.parseModule(source, { comment: true, range: true });
     const annotated = annotateAstWithIds(parsed);
     return annotated;
   } catch (error) {
